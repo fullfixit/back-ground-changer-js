@@ -20,3 +20,17 @@ var ImgTwo = "url(https://kitpapa.net/etricks/wp-content/uploads/2023/05/Lifting
     
     
     })
+
+
+/****** hedar change background ******/
+jQuery(document).ready(function(){
+jQuery(window).scroll(function() {
+var scroll = jQuery(window).scrollTop();
+if (scroll >= 70) {
+jQuery("#header").addClass("pa-fixed-header");
+}
+else{
+jQuery("#header").removeClass("pa-fixed-header");
+}
+});
+});
